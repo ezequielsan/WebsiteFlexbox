@@ -1,104 +1,137 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/ea346223ba.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
-    <title> Hotel Paraíso - Flexbox</title>
-    <link rel="sortcut icon" href="./img/icon.png" type="image/png" width=" 300px" />;
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/ea346223ba.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Metrophobic&display=swap" rel="stylesheet">
+  <title> Hotel Paraíso - Flexbox</title>
+  <link rel="sortcut icon" href="./img/icon.png" type="image/png" width=" 300px" />;
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="logo" title="logo">
-        <nav>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Reservas</a></li>
-            <li><a href="#">Contato</a></li>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Conheça este paraíso chamando Itacaré</h1>
-        <h3>"Aconchego, conforto, simpatia e alto astral"</h3>
-        <a href="" class="btn">Saiba mais</a>
-    </section>
-    <section class="conheca-hotel">
-        <h3>Conheça o Hotel Paraíso!</h3>
-        <p>Feche os olhos e imagine o paraíso. Um ligar no meio da Mata Atlântica e banhado pelo mar,
-            onde você encontra paz, tranquilidade, conforto e comunidade.</p>
-        <hr>
+  <header class="l-header">
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="index.html">
+          <img src="./assets/img/logo.png" alt="logo" title="logo">
+        </a>
+      </div>
 
-        <ul class="grid">
-            <li class="small" style="background-image: url('./img/itacare-01.jpg');"></li>
-            <li class="large" style="background-image: url('./img/itacare-02.jpg');"></li>
-            <li class="large" style="background-image: url('./img/itacare-03.jpg');"></li>
-            <li class="small" style="background-image: url('./img/itacare-04.jpg');"></li>
+      <div class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Reservas</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contato</a></li>
         </ul>
-    </section>
-    <section class="caracteristicas">
-        <h3>Único hotel pé na areia de Itacaré</h3>
-        <p>Implantado em uma área completamnte arborizada, o Hotel Paraíso
-            é o único hotel de pé na areia em Itacaré. Aqui o mar será seu
-            companheiro e você terá as belezas da natureza ao seu dispor.
+      </div>
+
+      <div class="nav__menu-toggle" id="menu-toggle">
+        <a href="#">
+          <ion-icon name="menu" class="nav__icon"></ion-icon>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="hero__title">Conheça este paraíso chamando Itacaré</h1>
+    <h3 class="hero__subtitle">"Aconchego, conforto, simpatia e alto astral"</h3>
+    <a href="#" class="hero__btn">Saiba mais</a>
+  </section>
+
+  <section class="about-us">
+    <h3 class="about-us__title">Conheça o Hotel Paraíso!</h3>
+    <p class="about-us__phrase">Feche os olhos e imagine o paraíso. Um ligar no meio da Mata Atlântica e banhado pelo mar, onde você encontra paz, tranquilidade, conforto e comunidade.
+    </p>
+    <hr>
+
+    <ul class="about-us__list bd-grid">
+      <li class="about-us__item small" style="background-image: url('./assets/img/itacare-01.jpg');"></li>
+      <li class="about-us__item large" style="background-image: url('./assets/img/itacare-02.jpg');"></li>
+      <li class="about-us__item large" style="background-image: url('./assets/img/itacare-03.jpg');"></li>
+      <li class="about-us__item small" style="background-image: url('./assets/img/itacare-04.jpg');"></li>
+    </ul>
+  </section>
+
+  <section class="characteristics">
+    <h3 class="characteristics__title">Único hotel pé na areia de Itacaré</h3>
+    <p class="characteristics__phrase">Implantado em uma área completamnte arborizada, o Hotel Paraíso é o único hotel de pé na areia em Itacaré. Aqui o mar será seu companheiro e você terá as belezas da natureza ao seu dispor.
+    </p>
+    <hr>
+
+    <ul class="characteristics__list bd-grid">
+      <li class="characteristics__item">
+        <i class="fas fa-location-arrow characteristics__item-icon"></i>
+        <h4 class="characteristics__item-title">Localização</h4>
+        <p class="characteristics__item-phrase">Localizada no sul da Bahia, entre o mar e a Mata Atlântica,
+          Itacaré tem refrescantes picinas, praias belíssimas, muitas
+          delas tão pequenas que nem aparecem no mapa.</p>
+      </li>
+      <li class="characteristics__item">
+        <i class="fas fa-gift characteristics__item-icon" class=""></i>
+        <h4 class="characteristics__item-title">Pacote e Ofertas</h4>
+        <p class="characteristics__item-phrase">Sabe aquele descontraído encontro com a família e amigos ?
+          Ou um momento relax? Nosso hotel proporciona uma diversidade
+          de espaços que proporcionam momentos inesquecíveis.</p>
+      </li>
+      <li class="characteristics__item">
+        <i class="fas fa-home characteristics__item-icon"></i>
+        <h4 class="characteristics__item-title">Acomodações</h4>
+        <p class="characteristics__item-phrase">Hotel Paraíso possui 29 unidades, divididas entre 11 chalés,
+          16 amplas suítes, 23 quartos de luxo todos con TV a cabo,
+          frigobar, além de varanda com rede.
         </p>
-        <hr>
-        <ul class="grid">
-            <li>
-                <i class="fas fa-location-arrow"></i>
-                <h4>Localização</h4>
-                <p>Localizada no sul da Bahia, entre o mar e a Mata Atlântica, 
-                    Itacaré tem refrescantes picinas, praias belíssimas, muitas 
-                    delas tão pequenas que nem aparecem no mapa.</p>
-            </li>
-            <li>
-                <i class="fas fa-gift"></i>
-                <h4>Pacote e Ofertas</h4>
-                <p>Sabe aquele descontraído encontro com a família e amigos ?
-                   Ou um momento relax? Nosso hotel proporciona uma diversidade
-                   de espaços que proporcionam momentos inesquecíveis.</p>
-            </li>
-            <li>
-                <i class="fas fa-home"></i>
-                <h4>Acomodações</h4>
-                <p>Hotel Paraíso possui 29 unidades, divididas entre 11 chalés,
-                   16 amplas suítes, 23 quartos de luxo todos con TV a cabo, 
-                   frigobar, além de varanda com rede.
-                </p>
-            </li>
-        </ul>
+      </li>
+    </ul>
+  </section>
 
+  <section class="newsletter">
+    <h3 class="newsletter__title">Newsletter</h3>
+    <p class="newsletter__phrase">Assine nossa newsletter para se manter atualizado com nossos serviços e a nossa programação.
+    </p>
+    <hr>
 
-    </section>
+    <form method="POST" class="newsletter__form">
+      <input type="text" placeholder="Email">
+      <button class="newsletter__form-button"> Cadastrar </button>
+    </form>
+  </section>
 
-    <section class="newsletter">
-        <h3>Newsletter</h3>
-        <p>Assine nossa newsletter para se manter atualizado com nossos serviços e a nossa programação.
-        </p>
-        <hr>
+  <section class="footer">
+    <ul class="footer__list">
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <i class="fab fa-instagram-square"></i>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="#" class="footer__link">
+          <i class="fab fa-github-square"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="footer__copy">Todos os diritos reservador para <b> Cyber Punk 2077 </b></p>
+    <p class="footer__copy">© by Ezequiel </p>
+  </section>
 
-        <form>
-            <input type="text" placeholder="Email">
-            <button> Cadastrar </button>
-        </form>
-
-    </section>
-
-    <section class="footer">
-        <ul>
-            <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-            <li><a href="#"><i class="fab fa-github-square"></i></a></li>
-        </ul>
-        <p>Todos os diritos reservador para <b> Cyber Punk 2077 </b></p>
-        <p>© ℗ ® by Ezequiel </p>
-    </section>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="./assets/js/main.js"></script>
 
 </body>
 
